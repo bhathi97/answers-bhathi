@@ -82,4 +82,7 @@ function directFunction1(){
 function directFunction2(){
     window.location.href = "Main.html";
 }
+function directFunction3(){
+    window.location.href = "Main2.html";
+}
 
