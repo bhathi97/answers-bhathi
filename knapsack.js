@@ -35,7 +35,8 @@ function function1() {
 function results() {
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
-    getTotalPrice(itemList, num1, num2, itemList.length);
+    let x = getTotalPrice(itemList, num1, num2, itemList.length);
+    alert("Total price:" + x);
 }
 
 //knapsack algorithm customized here
@@ -69,15 +70,16 @@ const itemList = [
     { weight: 20, price: 30, size: 40 },
     { weight: 25, price: 35, size: 40 }
 ];
-  
-let x= getTotalPrice(itemList,document.getElementById("num1").value, document.getElementById("num2").value, itemList.length);
+//catch the return value  
+let x = getTotalPrice(itemList,document.getElementById("num1").value, document.getElementById("num2").value, itemList.length);
 console.log(x);
-alert(x);
 
-getTotalPrice(itemList, 50, 50, itemList.length);
-
+//getTotalPrice(itemList, 50, 50, itemList.length);
         
 function directFunction1(){
-    window.location.href = "knapsakSol.html";
+    window.location.href = "knapsackSol.html";
+}
+function directFunction2(){
+    window.location.href = "Main.html";
 }
 

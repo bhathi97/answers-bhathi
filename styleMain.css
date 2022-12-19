@@ -27,5 +27,23 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
-  }
+}
 
+form {
+    text-align: center;
+    position: relative;
+    top: auto;
+    
+}
+
+#back{
+    background-color: #eb1414;
+}
+
+#next{
+    background-color: #189ec7;
+}
+
+#try{
+    background-color: #0b579e;
+}
