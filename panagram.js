@@ -37,10 +37,22 @@ const pangrams = s => {
     return "is a pangram";
 }
 
-pangrams("We promptly judged antique ivory buckles for the next prize");
 
 function directFunction1(){
     window.location.href = "Main.html";
 }
 
+function directFunction2(){
+    window.location.href = "Main2.html";
+}
+
+function directFunction3(){
+    window.location.href = "panagram.html";
+}
+
+function results() {
+    var s = document.getElementById("s").value;
+    let s1 = pangrams(s);
+    alert(s1);
+}
     
