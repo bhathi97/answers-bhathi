@@ -10,13 +10,37 @@ function func1(){
     "    for (var i = 0; i < alp.length; i++){ \n"+
     "    //chech each letter is in the sent or not \n"+
     "    //The indexOf() method returns -1 if the value is not found. \n"+
-    "    if(sent.indexOf(alp[i]) === -1){ \n"+
-    "        return \"not pangram\"; \n"+
-    "    } \n"+
+    "       if(sent.indexOf(alp[i]) === -1){ \n"+
+    "          return \"not pangram\"; \n"+
+    "       } \n"+
     "    } \n"+
     "    return \"pangram\"; \n"+
     "} \n"+
     
     "pangrams(\"We promptly judged antique ivory buckles for the next prize\"); \n"
 }
+
+const pangrams = s => {
+    //get alphabet to compare
+    var alp = "abcdefghijklmnopqrstuvwxyz";
+    //remove the spaces and convert to lowercases
+    var sent = s.toLowerCase().replace(" ","");
+    
+    //go throught the alphabet
+    for (var i = 0; i < alp.length; i++){
+    //chech each letter is in the sent or not
+    //The indexOf() method returns -1 if the value is not found.
+    if(sent.indexOf(alp[i]) === -1){
+        return "not a pangram";
+    }
+    }
+    return "is a pangram";
+}
+
+pangrams("We promptly judged antique ivory buckles for the next prize");
+
+function directFunction1(){
+    window.location.href = "Main.html";
+}
+
     
